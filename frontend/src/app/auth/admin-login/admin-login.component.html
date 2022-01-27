@@ -1,0 +1,24 @@
+<main class="form-signin">
+    <form #signinWithEmailForm="ngForm" (submit)="signinWithEmail(signinWithEmailForm)">
+        <img class="mb-4" src="https://lh3.googleusercontent.com/-Bxy33Qjn4Q8/AAAAAAAAAAI/AAAAAAAAAAA/MZqQTSv1vMQ/s88-p-k-no-ns-nd/photo.jpg" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+  
+      <div class="form-floating">
+        <input type="email" id="email" name="email" class="form-control" ngModel required autocomplete="off" maxlength="100">
+        <label for="email">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" id="password" name="password" class="form-control" ngModel required autocomplete="off">
+        <label for="password">Password</label>
+      </div>
+  
+      <!-- <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div> -->
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+    </form>
+  </main>
+  
