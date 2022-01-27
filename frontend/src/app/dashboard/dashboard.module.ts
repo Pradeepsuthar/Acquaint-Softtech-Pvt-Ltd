@@ -5,16 +5,20 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { HomeComponent } from './containers/home/home.component';
 import { AccountSettingsComponent } from './containers/account-settings/account-settings.component';
 import { ProductLayoutComponent } from './products/product-layout.component';
+import { SharedModule } from '../shared/shared.module';
+import { DashboardComponent } from './dashboard.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     AccountSettingsComponent,
-    ProductLayoutComponent
+    ProductLayoutComponent,
+    DashboardComponent
   ],
   imports: [
     CommonModule,
+    SharedModule,
     DashboardRoutingModule
   ]
 })

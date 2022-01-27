@@ -1,1 +1,43 @@
-<p>products-list works!</p>
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Products</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+      <div class="btn-group me-2">
+        <button type="button" class="btn btn-sm btn-secondary" routerLink="/dashboard/products/add">ADD NEW</button>
+      </div>
+    </div>
+  </div>
+
+<div class="table-responsive">
+    <table class="table table-striped table-sm table-responsive table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Product Code</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Price</th>
+                <th scope="col">Status</th>
+                <th scope="col">Manufacture Date</th>
+                <th scope="col">Expiry Date</th>
+                <th scope="col">Created Date</th>
+                <th scope="col">Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let product of products;">
+                <ng-container *ngIf="product.isAvailable">
+                    <tr>
+                        <td style="color: #222;cursor: pointer;font-weight: 600;">{{product.productCode}}</td>
+                        <td><p style="max-width: 300px;">{{product.name}}</p></td>
+                        <td><p>{{product.category}}</p></td>
+                        <td><p>{{product.price}}</p></td>
+                        <td><p>{{product.status}}</p></td>
+                        <td><p>{{product.manufactureDate}}</p></td>
+                        <td><p>{{product.expiryDate}}</p></td>
+                        <td><p>{{product.createdAt | date: 'dd-MM-yyy'}}</p></td>
+                        <td><button class="btn btn-outline-primary btn-sm" routerLink="/dashboard/products/update/{{'daskjdhsadhaksh'}}">EDIT</button></td>
+                    </tr>
+                </ng-container>
+            </ng-container>
+        </tbody>
+    </table>
+</div>

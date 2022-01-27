@@ -19,6 +19,12 @@ export class HttpService {
       .get(this.baseUrl + url, data).pipe(catchError(this.errorHandler.bind(this)));
   }
 
+  getWithoutHeader(url: string, params?: any): Observable<any> {
+    const data = { ...params };
+    return this.httpClient
+      .get(this.baseUrl + url, data).pipe(catchError(this.errorHandler.bind(this)));
+  }
+
   postWithoutHeader(url: string, params?: any): Observable<any> {
     const data = { ...params };
     return this.httpClient

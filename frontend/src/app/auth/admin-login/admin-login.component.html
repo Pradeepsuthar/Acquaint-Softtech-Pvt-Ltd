@@ -3,6 +3,10 @@
         <img class="mb-4" src="https://lh3.googleusercontent.com/-Bxy33Qjn4Q8/AAAAAAAAAAI/AAAAAAAAAAA/MZqQTSv1vMQ/s88-p-k-no-ns-nd/photo.jpg" alt="" width="72" height="72">
       <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
   
+      <div *ngIf="this.error">
+        <p style="color: red;">{{this.error.messages}}</p>
+      </div>
+
       <div class="form-floating">
         <input type="email" id="email" name="email" class="form-control" ngModel required autocomplete="off" maxlength="100">
         <label for="email">Email address</label>

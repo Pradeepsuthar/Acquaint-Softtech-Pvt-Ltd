@@ -11,7 +11,12 @@ export class ApiRequestService {
   // Admin Login
   adminLogin(params: any) {
     let apiURL: string = '/api/login';
-    return this.http.postWithoutHeader(apiURL, params)
+    return this.http.postWithoutHeader(apiURL, params);
+  }
+  
+  getAllProducts() {
+    let apiURL: string = '/api/get-all-products';
+    return this.http.getWithoutHeader(apiURL);
   }
 
 }

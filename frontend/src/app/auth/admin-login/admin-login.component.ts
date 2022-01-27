@@ -10,6 +10,7 @@ import { ApiRequestService } from 'src/app/_services/api-request.service';
 })
 export class AdminLoginComponent implements OnInit {
 
+  error: any;
   constructor(private _apiReqSevice: ApiRequestService, private router: Router) { }
 
   ngOnInit(): void {
@@ -26,13 +27,14 @@ export class AdminLoginComponent implements OnInit {
 
     this._apiReqSevice.adminLogin(loginobj).subscribe(
       (res) => {
-        // if admin blocked any user they can login 
-        console.log("res", res);
+        console.log("resData", res);
         if (res.access_token && res.refresh_token) {
           localStorage.setItem('auth_tokens', JSON.stringify(res))
           this.router.navigateByUrl('/dashboard');
         }
-        return
+      },
+      (err) => {
+        this.error = err;
       });
   }
 
