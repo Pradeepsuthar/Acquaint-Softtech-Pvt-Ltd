@@ -1,0 +1,36 @@
+Super Fi detail
+
+Git repo for the admin panel
+
+https://gitlab.com/mobidev86/superfiadmin.git
+
+mobidev86@gmail.com
+aGC@2019
+
+Here is the design Figma file. Need to check the Admin panel design.
+https://www.figma.com/file/lgwE7xmFxhtv98yuijis3f/SuperFi_AppMap?node-id=1535%3A15132
+
+Git repo for the react-native app
+
+https://gitlab.com/mobidev86/superfi-react-native.git
+
+mobidev86@gmail.com
+aGC@2019
+
+Here is the design Figma file. Need to check the App phase 1
+https://www.figma.com/file/lgwE7xmFxhtv98yuijis3f/SuperFi_AppMap?node-id=1763%3A44939
+
+
+
+Sign in
+https://gitlab.com
+
+Figma credential
+
+mobidev86@gmail.com
+aGC#BD@2021
+
+
+
+
+

@@ -1,0 +1,12 @@
+21 Feb 2022
+
+his is our task for monday
+1 - Understanding project and database
+2 - Full access to project
+3 - Getting codebase running on local machines 
+4 - Setting up databases on local machines 
+5 - understand Build process - Pushing to stage, beta, etc.
+
+
+
+
